@@ -1,7 +1,7 @@
 # Todo MERN App
 
 App to create, read, update, delete and search Todo tasks and filter tasks.
-This project build by MongoDB, Express, React(v18) and Node.
+This project build by MongoDB, Express, React(v18) and React-Bootstrap.
 
 <!-- <img src="public/HomePage.png" /> -->
 <!-- <img src="public/SearchResult.png" /> -->
