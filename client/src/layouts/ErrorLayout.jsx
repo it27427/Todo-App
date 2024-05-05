@@ -1,5 +1,5 @@
 const ErrorLayout = ({ children }) => {
-  return <main>{children}</main>;
+  return <main className='min-vh-100'>{children}</main>;
 };
 
 export default ErrorLayout;

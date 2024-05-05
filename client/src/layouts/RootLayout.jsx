@@ -5,7 +5,7 @@ const RootLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className='min-vh-100'>{children}</main>
       <Footer />
     </>
   );
