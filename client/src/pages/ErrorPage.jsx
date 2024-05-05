@@ -1,10 +1,11 @@
-import React from 'react';
+import NotFound from '@/components/NotFound';
+import ErrorLayout from '@/layouts/ErrorLayout';
 
 const ErrorPage = () => {
   return (
-    <div>
-      <h2>Error Page</h2>
-    </div>
+    <ErrorLayout>
+      <NotFound />
+    </ErrorLayout>
   );
 };
 
