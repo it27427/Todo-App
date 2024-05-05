@@ -1,10 +1,13 @@
-import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 const NavBar = () => {
   return (
-    <nav>
-      <h2>Navbar</h2>
-    </nav>
+    <Container>
+      <Navbar sticky='top' className=''>
+        <Navbar.Brand href='/'>React-Bootstrap</Navbar.Brand>
+      </Navbar>
+    </Container>
   );
 };
 
