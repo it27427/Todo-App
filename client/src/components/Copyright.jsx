@@ -1,10 +1,10 @@
-import React from 'react';
-
 const Copyright = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div>
-      <h2>Copyright</h2>
-    </div>
+    <>
+      <p>Copyright &copy; {currentYear} Todo app all rights reserved.</p>
+    </>
   );
 };
 
