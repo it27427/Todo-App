@@ -1,10 +1,10 @@
-import React from 'react';
+import ErrorLayout from '@/layouts/ErrorLayout';
 
 const Register = () => {
   return (
-    <div>
+    <ErrorLayout>
       <h1>Register Page</h1>
-    </div>
+    </ErrorLayout>
   );
 };
 

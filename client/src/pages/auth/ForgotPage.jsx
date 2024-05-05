@@ -1,10 +1,10 @@
-import React from 'react';
+import ErrorLayout from '@/layouts/ErrorLayout';
 
 const ForgotPage = () => {
   return (
-    <div>
+    <ErrorLayout>
       <h2>Forgot Password?</h2>
-    </div>
+    </ErrorLayout>
   );
 };
 

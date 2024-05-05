@@ -4,7 +4,10 @@ import AboutPage from '@/pages/AboutPage';
 import ErrorPage from '@/pages/ErrorPage';
 import Homepage from '@/pages/Homepage';
 
-const App = () => {
+// AUTH-PAGES
+// import AboutPage from '@/pages/AboutPage';
+
+function App() {
   return (
     <Router>
       <Routes>
@@ -14,6 +17,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
