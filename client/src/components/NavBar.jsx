@@ -24,6 +24,19 @@ const NavBar = () => {
           </NavLink>
         </li>
       </ul>
+
+      <ul className='navbar-nav flex-row gap-2'>
+        <li className='nav-item'>
+          <NavLink to='/login' className='btn btn-outline-secondary'>
+            <small>Login</small>
+          </NavLink>
+        </li>
+        <li className='nav-item'>
+          <NavLink to='/register' className='btn btn-success'>
+            <small>Register</small>
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };
