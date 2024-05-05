@@ -1,6 +1,6 @@
 import ErrorLayout from '@/layouts/ErrorLayout';
 
-const Register = () => {
+const RegisterPage = () => {
   return (
     <ErrorLayout>
       <h1>Register Page</h1>
@@ -8,4 +8,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default RegisterPage;
