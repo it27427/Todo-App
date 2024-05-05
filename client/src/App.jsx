@@ -5,9 +5,9 @@ import ErrorPage from '@/pages/ErrorPage';
 import Homepage from '@/pages/Homepage';
 
 // AUTH-PAGES
-// import LoginPage from '@/pages/auth/LoginPage';
-// import RegisterPage from '@/pages/auth/RegisterPage';
-// import ForgotPage from '@/pages/auth/ForgotPage';
+import ForgotPage from '@/pages/auth/ForgotPage';
+import LoginPage from '@/pages/auth/LoginPage';
+import RegisterPage from '@/pages/auth/RegisterPage';
 
 function App() {
   return (
@@ -15,6 +15,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/about' element={<AboutPage />} />
+
+        {/* AUTH-PAGES */}
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/register' element={<RegisterPage />} />
+        <Route path='/forgot-password' element={<ForgotPage />} />
+
+        {/* ERROR-PAGE */}
         <Route path='/*' element={<ErrorPage />} />
       </Routes>
     </Router>
