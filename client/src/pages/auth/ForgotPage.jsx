@@ -1,7 +1,7 @@
+import { Link } from 'react-router-dom';
+
 import ForgotForm from '@/components/ForgotForm';
 import ErrorLayout from '@/layouts/ErrorLayout';
-
-import { Link } from 'react-router-dom';
 
 const ForgotPage = () => {
   return (

@@ -1,7 +1,7 @@
+import { Link } from 'react-router-dom';
+
 import LoginForm from '@/components/LoginForm';
 import ErrorLayout from '@/layouts/ErrorLayout';
-
-import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   return (
