@@ -1,7 +1,9 @@
-import React from 'react';
-
-const Button = () => {
-  return <button>Button</button>;
+const Button = ({ type, click, children }) => {
+  return (
+    <button type={type} onClick={click}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
