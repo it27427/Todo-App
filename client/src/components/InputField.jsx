@@ -1,10 +1,14 @@
-import React from 'react';
-
-const InputField = () => {
+const InputField = ({ type, placeholder, name, id, classes }) => {
   return (
-    <div>
-      <h2>Input Field</h2>
-    </div>
+    <>
+      <input
+        type={type}
+        name={name}
+        id={id}
+        className={`${classes}`}
+        placeholder={placeholder}
+      />
+    </>
   );
 };
 
