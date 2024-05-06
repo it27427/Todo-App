@@ -29,7 +29,12 @@ const LoginForm = () => {
       />
 
       <div className='mt-3'>
-        <Button type='submit'>Login</Button>
+        <Button
+          type='submit'
+          classes='btn btn-primary text-uppercase fw-semibold'
+        >
+          <small>Login</small>
+        </Button>
       </div>
     </form>
   );
