@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import InputField from './InputField';
 
@@ -18,15 +19,21 @@ const LoginForm = () => {
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      <InputField
-        type='password'
-        name='password'
-        id='password'
-        classes='form-control'
-        placeholder='Enter Password'
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
+      <div className='d-flex flex-column gap-2'>
+        <InputField
+          type='password'
+          name='password'
+          id='password'
+          classes='form-control'
+          placeholder='Enter Password'
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <div className='d-flex justify-content-end'>
+          <Link to='/forgot-password'>Forgot Password?</Link>
+        </div>
+      </div>
 
       <div className='mt-3'>
         <Button
