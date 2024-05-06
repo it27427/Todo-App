@@ -13,7 +13,7 @@ const ForgotPage = () => {
               <div className='d-flex flex-column align-items-center justify-content-center gap-4 text-center'>
                 <div className='d-flex flex-column gap-2'>
                   <h2 className='fw-semibold text-uppercase'>
-                    Forgot your password?
+                    Forgot password
                   </h2>
                   <p className='text-secondary w-75 mx-auto'>
                     Please enter the email address you'd like your password
