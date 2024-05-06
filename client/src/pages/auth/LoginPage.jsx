@@ -1,9 +1,10 @@
+import LoginForm from '@/components/LoginForm';
 import ErrorLayout from '@/layouts/ErrorLayout';
 
 const LoginPage = () => {
   return (
     <ErrorLayout>
-      <h1>Login Page</h1>
+      <LoginForm />
     </ErrorLayout>
   );
 };
