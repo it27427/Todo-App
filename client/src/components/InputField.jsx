@@ -6,6 +6,7 @@ const InputField = ({ type, placeholder, name, id, classes }) => {
       id={id}
       className={classes}
       placeholder={placeholder}
+      autoComplete='off'
     />
   );
 };
