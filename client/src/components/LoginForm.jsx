@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Button from './Button';
 import InputField from './InputField';
 
@@ -8,7 +7,7 @@ const LoginForm = () => {
   const [password, setPassword] = useState('');
 
   return (
-    <form className='d-flex flex-column gap-3'>
+    <form className='d-flex flex-column gap-3 w-100 bg-white px-4 py-5 rounded'>
       <InputField
         type='email'
         name='email'
@@ -29,23 +28,13 @@ const LoginForm = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      <div className='my-4'>
+      <div className='mt-3'>
         <Button
           type='submit'
-          classes='btn btn-primary text-uppercase fw-semibold'
+          classes='btn btn-primary text-uppercase fw-semibold w-100'
         >
           <small>Login</small>
         </Button>
-      </div>
-
-      <div className='d-flex align-items-center justify-content-center gap-1 text-center'>
-        <p className='lead mb-0'>
-          <small>Don't have any account?</small>
-        </p>
-
-        <Link to='/register' className='nav-link'>
-          Register
-        </Link>
       </div>
     </form>
   );
