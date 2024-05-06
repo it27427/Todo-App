@@ -31,7 +31,9 @@ const LoginForm = () => {
         />
 
         <div className='d-flex justify-content-end'>
-          <Link to='/forgot-password'>Forgot Password?</Link>
+          <Link to='/forgot-password' className='nav-link text-dark'>
+            Forgot Password?
+          </Link>
         </div>
       </div>
 
