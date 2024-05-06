@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from './Button';
 import InputField from './InputField';
 
 const LoginForm = () => {
@@ -26,6 +27,10 @@ const LoginForm = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
+
+      <div className='mt-3'>
+        <Button type='submit'>Login</Button>
+      </div>
     </form>
   );
 };
