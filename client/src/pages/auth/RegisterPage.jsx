@@ -1,6 +1,7 @@
-import ErrorLayout from '@/layouts/ErrorLayout';
-
 import { Link } from 'react-router-dom';
+
+import RegisterForm from '@/components/RegisterForm';
+import ErrorLayout from '@/layouts/ErrorLayout';
 
 const RegisterPage = () => {
   return (
@@ -11,7 +12,7 @@ const RegisterPage = () => {
             <div className='col-md-6 col-lg-5 mx-md-auto'>
               <div className='d-flex flex-column align-items-center justify-content-center gap-4 text-center'>
                 <h2 className='fw-semibold text-uppercase'>Register</h2>
-                {/* <LoginForm /> */}
+                <RegisterForm />
 
                 <div className='d-flex align-items-center justify-content-center gap-1 text-center'>
                   <p className='lead mb-0'>
