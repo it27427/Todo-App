@@ -22,7 +22,7 @@ const ForgotForm = () => {
           type='submit'
           classes='btn btn-primary text-uppercase fw-semibold w-100'
         >
-          <small>Continue</small>
+          <small>Password Reset Link</small>
         </Button>
       </div>
     </form>
