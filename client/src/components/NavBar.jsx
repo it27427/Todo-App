@@ -23,6 +23,11 @@ const NavBar = () => {
             <small>About</small>
           </NavLink>
         </li>
+        <li className='nav-item'>
+          <NavLink to='/todo' className={linkClasses}>
+            <small>Todo</small>
+          </NavLink>
+        </li>
       </ul>
 
       <ul className='navbar-nav flex-row gap-2'>

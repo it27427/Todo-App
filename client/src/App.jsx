@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import AboutPage from '@/pages/AboutPage';
 import ErrorPage from '@/pages/ErrorPage';
 import Homepage from '@/pages/Homepage';
+import TodoPage from '@/pages/TodoPage';
 
 // AUTH-PAGES
 import ForgotPage from '@/pages/auth/ForgotPage';
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/todo' element={<TodoPage />} />
 
         {/* AUTH-PAGES */}
         <Route path='/login' element={<LoginPage />} />
