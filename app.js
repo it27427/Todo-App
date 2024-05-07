@@ -3,6 +3,10 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
+const connectDB = require('./config/db');
+
+// CONNECTING-DATABASE
+connectDB();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
