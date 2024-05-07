@@ -57,7 +57,7 @@ const LoginForm = () => {
           type='submit'
           classes='btn btn-primary text-uppercase fw-semibold w-100'
           click={handleSubmit}
-          disabled={!email || !password}
+          // disabled={!email || !password}
         >
           <small>Login</small>
         </Button>
