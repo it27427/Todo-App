@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
+import BrandLogo from './BrandLogo';
 
 const NavBar = () => {
   const linkClasses = ({ isActive }) =>
@@ -8,11 +9,7 @@ const NavBar = () => {
 
   return (
     <nav className='navbar d-flex align-items-center justify-content-between'>
-      <Link to='/' className='navbar-brand fw-bold text-uppercase me-0 py-0'>
-        <span className='d-flex align-items-center gap-2'>
-          <small>DailyNotes</small>
-        </span>
-      </Link>
+      <BrandLogo />
 
       <ul className='navbar-nav flex-row gap-4'>
         <li className='nav-item'>
@@ -34,14 +31,14 @@ const NavBar = () => {
 
       <ul className='navbar-nav flex-row gap-2'>
         <li className='nav-item'>
-          <NavLink to='/login' className='btn btn-outline-secondary'>
+          <Link to='/login' className='btn btn-outline-secondary'>
             <small>Login</small>
-          </NavLink>
+          </Link>
         </li>
         <li className='nav-item'>
-          <NavLink to='/register' className='btn btn-success'>
+          <Link to='/register' className='btn btn-success'>
             <small>Register</small>
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>
