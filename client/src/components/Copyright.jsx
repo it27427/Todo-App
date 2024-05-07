@@ -4,7 +4,9 @@ const Copyright = () => {
   return (
     <>
       <p className='mb-0 text-center fw-medium text-white small'>
-        Copyright &copy; {currentYear} Todo app all rights reserved.
+        Copyright &copy; {currentYear}{' '}
+        <span className='fst-italic fw-bold'>DailyNotes</span> all rights
+        reserved.
       </p>
     </>
   );
