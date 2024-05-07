@@ -6,7 +6,7 @@ const url = config.db.url;
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(url, {});
+    await mongoose.connect(url);
     console.log(`Database Connected Successfully!`.bgGreen);
   } catch (error) {
     console.error('Error connecting to database:', error);
