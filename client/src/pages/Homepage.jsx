@@ -8,9 +8,11 @@ const Homepage = () => {
         <div className='container'>
           <div className='row g-4 align-items-center'>
             <div className='col-md-6'>
-              <h1>
+              <h1 className='text-uppercase text-center text-md-start'>
                 Schedule your daily tasks with{' '}
-                <span className='text-primary'>DailyNotes</span>
+                <span className='fst-italic fw-bolder'>
+                  Daily<span className='text-primary'>Notes</span>
+                </span>
               </h1>
             </div>
 
