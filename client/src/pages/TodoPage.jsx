@@ -1,10 +1,10 @@
-import React from 'react';
+import RootLayout from '@/layouts/RootLayout';
 
 const TodoPage = () => {
   return (
-    <div>
+    <RootLayout>
       <h2>Todo Page</h2>
-    </div>
+    </RootLayout>
   );
 };
 
