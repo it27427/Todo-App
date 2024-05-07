@@ -1,7 +1,8 @@
 const User = require('../models/User');
+const config = require('../config/config');
+
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const config = require('../config/config');
 
 const registerUser = async (req, res) => {
   const { name, email, phone, password } = req.body;
@@ -29,10 +30,9 @@ const registerUser = async (req, res) => {
   }
 };
 
-const privateKey = config.secret.key;
-
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
+  const privateKey = config.secret.key;
 
   try {
     const user = await User.findOne({ email });
