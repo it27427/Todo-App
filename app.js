@@ -16,8 +16,10 @@ app.use(morgan('dev'));
 
 // IMPORT-ROUTES
 const homeRouter = require('./routes/home.route');
+const authRouter = require('./routes/auth.route');
 
 app.use(homeRouter);
+app.use(authRouter);
 
 app.use((req, res, next) => {
   const notFound = '<h1>Page Not Found</h1>';
