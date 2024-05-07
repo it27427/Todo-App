@@ -10,8 +10,11 @@ const RegisterPage = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 col-lg-5 mx-md-auto'>
-              <div className='d-flex flex-column align-items-center justify-content-center gap-4 text-center'>
-                <h2 className='fw-semibold text-uppercase'>Register</h2>
+              <div className='d-flex flex-column align-items-center justify-content-center gap-3 text-center'>
+                <hgroup className='d-flex flex-column align-items-center justify-content-center gap-2 text-center'>
+                  <h2 className='display-4'>✍️</h2>
+                  <h4 className='fw-semibold text-uppercase'>Register</h4>
+                </hgroup>
                 <RegisterForm />
 
                 <div className='d-flex align-items-center justify-content-center gap-1 text-center'>

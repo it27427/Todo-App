@@ -9,7 +9,7 @@ const RegisterForm = () => {
   const [password, setPassword] = useState('');
 
   return (
-    <form className='d-flex flex-column gap-3 w-100 bg-white px-4 py-5 rounded'>
+    <form className='d-flex flex-column gap-3 w-100 bg-white p-4 rounded'>
       <InputField
         type='text'
         name='name'

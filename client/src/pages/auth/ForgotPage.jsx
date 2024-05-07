@@ -10,11 +10,14 @@ const ForgotPage = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 col-lg-5 mx-md-auto'>
-              <div className='d-flex flex-column align-items-center justify-content-center gap-4 text-center'>
+              <div className='d-flex flex-column align-items-center justify-content-center gap-3 text-center'>
                 <div className='d-flex flex-column gap-2'>
-                  <h2 className='fw-semibold text-uppercase'>
-                    Forgot password
-                  </h2>
+                  <hgroup className='d-flex flex-column gap-2'>
+                    <h2 className='display-4'>🤔</h2>
+                    <h3 className='fw-semibold text-uppercase'>
+                      Forgot password
+                    </h3>
+                  </hgroup>
                   <p className='text-secondary w-75 mx-auto'>
                     Please enter the email address you'd like your password
                     reset information sent to
