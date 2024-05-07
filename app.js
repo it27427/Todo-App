@@ -10,8 +10,8 @@ connectDB();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 app.use(morgan('dev'));
 
 // IMPORT-ROUTES
@@ -19,7 +19,7 @@ const homeRouter = require('./routes/home.route');
 const authRouter = require('./routes/auth.route');
 
 app.use(homeRouter);
-app.use(authRouter);
+app.use('/api', authRouter);
 
 app.use((req, res, next) => {
   const notFound = '<h1>Page Not Found</h1>';
