@@ -7,6 +7,20 @@ import InputField from './InputField';
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isButtonDisabled, setButtonDisabled] = useState(false);
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Submit done');
+  };
 
   return (
     <form className='d-flex flex-column gap-3 w-100 bg-white px-4 py-5 rounded'>
@@ -17,7 +31,7 @@ const LoginForm = () => {
         classes='form-control'
         placeholder='Enter Email Address'
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleEmailChange}
       />
 
       <div className='d-flex flex-column gap-2'>
@@ -28,7 +42,7 @@ const LoginForm = () => {
           classes='form-control'
           placeholder='Enter Password'
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={handlePasswordChange}
         />
 
         <div className='d-flex justify-content-end'>
@@ -42,6 +56,8 @@ const LoginForm = () => {
         <Button
           type='submit'
           classes='btn btn-primary text-uppercase fw-semibold w-100'
+          click={handleSubmit}
+          disabled={!email || !password}
         >
           <small>Login</small>
         </Button>
