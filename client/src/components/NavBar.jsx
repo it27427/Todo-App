@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <nav className='navbar d-flex align-items-center justify-content-between'>
       <Link to='/' className='navbar-brand fw-bold text-uppercase me-0 py-0'>
-        <small>Todo App</small>
+        <small>DailyNotes</small>
       </Link>
 
       <ul className='navbar-nav flex-row gap-4'>
