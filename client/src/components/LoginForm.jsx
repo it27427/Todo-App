@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import AuthFeatures from '../features/userAuthentication.js';
 import Button from './Button';
 import InputField from './InputField';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isButtonDisabled, setButtonDisabled] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -17,9 +18,19 @@ const LoginForm = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Submit done');
+
+    try {
+      setLoading(true);
+      const data = { email, password };
+      const response = await AuthFeatures.loginUser(data);
+      console.log(response.data);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
   };
 
   return (

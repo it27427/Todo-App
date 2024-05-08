@@ -6,8 +6,10 @@ const registerUser = (data) => {
   return axios.post(`${SERVER_URL}/register`, data);
 };
 
-const loginerUser = (data) => {
+const loginUser = (data) => {
   return axios.post(`${SERVER_URL}/login`, data);
 };
 
-export default { registerUser, loginerUser };
+const AuthFeatures = { registerUser, loginUser };
+
+export default AuthFeatures;
