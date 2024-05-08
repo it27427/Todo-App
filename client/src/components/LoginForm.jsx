@@ -23,12 +23,12 @@ const LoginForm = () => {
 
     try {
       setLoading(true);
-      const data = { email, password };
+      let data = { email, password };
       const response = await AuthFeatures.loginUser(data);
-      console.log(response.data);
+      console.log(response);
       setLoading(false);
     } catch (error) {
-      console.log(error);
+      console.log(error.message);
       setLoading(false);
     }
   };
