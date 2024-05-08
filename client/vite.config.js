@@ -5,9 +5,6 @@ import { defineConfig } from 'vite';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000,
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src/'),
@@ -16,6 +13,16 @@ export default defineConfig({
       pages: path.resolve(__dirname, './src/pages'),
       pages: path.resolve(__dirname, './src/features/'),
       types: `${path.resolve(__dirname, './src/@types')}`,
+    },
+  },
+  server: {
+    port: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 });

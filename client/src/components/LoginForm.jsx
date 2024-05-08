@@ -34,7 +34,10 @@ const LoginForm = () => {
   };
 
   return (
-    <form className='d-flex flex-column gap-3 w-100 bg-white px-4 py-5 rounded'>
+    <form
+      onSubmit={handleSubmit}
+      className='d-flex flex-column gap-3 w-100 bg-white px-4 py-5 rounded'
+    >
       <InputField
         type='email'
         name='email'
@@ -67,7 +70,6 @@ const LoginForm = () => {
         <Button
           type='submit'
           classes='btn btn-primary text-uppercase fw-semibold w-100'
-          click={handleSubmit}
           // disabled={!email || !password}
         >
           <small>Login</small>
