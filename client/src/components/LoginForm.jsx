@@ -23,9 +23,9 @@ const LoginForm = () => {
 
     try {
       setLoading(true);
-      let data = { email, password };
+      const data = { email, password };
       const response = await AuthFeatures.loginUser(data);
-      console.log(response);
+      console.log(response.data);
       setLoading(false);
     } catch (error) {
       console.log(error.message);
