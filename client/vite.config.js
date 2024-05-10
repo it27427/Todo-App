@@ -10,9 +10,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src/'),
       components: `${path.resolve(__dirname, './src/components/')}`,
       public: `${path.resolve(__dirname, './public/')}`,
-      pages: path.resolve(__dirname, './src/pages'),
-      pages: path.resolve(__dirname, './src/features/'),
-      types: `${path.resolve(__dirname, './src/@types')}`,
+      pages: path.resolve(__dirname, './src/pages/'),
+      features: path.resolve(__dirname, './src/features/'),
     },
   },
   server: {
