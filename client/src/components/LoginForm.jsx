@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import AuthFeatures from '../features/userAuthentication.js';
+import AuthFeatures from '@/features/userAuthentication.js';
 import Button from './Button';
 import InputField from './InputField';
 
